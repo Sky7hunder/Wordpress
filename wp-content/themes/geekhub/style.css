@@ -1,0 +1,414 @@
+/*
+Theme Name: Geekhub
+Author: Kiril Cherkasov
+Author URI: http://geekhub.ck.ua/
+Description: First homework Wordpress website.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/license/gpl-2.0.html
+Text Domain: geekhub
+*/
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+html,body                       { width:100%; height:100%; }
+body                            { padding:0; margin:0; font: 13px Arial, sans-serif; background: #fff; color:#000; }
+div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,checkbox,input,textarea {
+	padding:0;
+	margin:0;
+	outline:none;
+	list-style:none;
+	color:#4c7689;
+}
+select, input, textarea        { font-size:12px; vertical-align:middle; }
+textarea                       { vertical-align:top; }
+:focus                         { outline:none; }
+input[type=submit]             { cursor:pointer; }
+img, fieldset                  { border:0; }
+table                          { border-collapse:collapse; border-spacing:0; }
+a:link, a:visited              { font:14px Arial, sans-serif; color:#000; text-decoration:none; }
+a:hover                        { text-decoration:underline; }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------DEFAULT CLASSES------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.float-r           	           { float:right !important; }
+.float-l                       { float:left !important; }
+.no-float                      { float:none !important; }
+.no-border                     { border:0 !important; }
+.no-bg                         { background:none !important; }
+.no-margin                     { margin:0 !important; }
+.no-padding                    { padding:0 !important; }
+.no-display                    { display:none !important; }
+.display                       { display:block !important; }
+.inline                        { display:inline !important; }
+.overflow                      { overflow:hidden !important; }
+.align-r                       { text-align:right !important; }
+.align-l                       { text-align:left !important; }
+.align-c                       { text-align:center !important; }
+.clear                         { clear:both; }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------WRAPPER--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+#wrapper{
+	margin:0 auto;
+	width: 900px;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------HEADER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+#header-wrap{
+	background: url(images/header-bg.jpg) repeat-x;
+}
+#header{
+	margin:0 auto;
+	width: 900px;
+	height: 450px;
+}
+#header h1{
+	float: left;
+	margin-top: 21px;
+	height: 72px;
+	margin-bottom: 20px;
+}
+#header h1 a span{
+	display: block;
+	text-indent: -2000px;
+}
+#social-links{
+	display: inline-block;
+	margin: 45px 0 0 94px;
+}
+#social-links li{
+	margin: 0 9px 0 0;
+	float: left;
+}
+.registration-bg{
+	position: relative;
+	display: inline-block;
+	width: 850px;
+	height: 336px;
+	padding-left: 50px;
+	background: url(images/reg-bg.png) no-repeat bottom;
+	border-top: 1px solid #8EA8B3;
+}
+.registration{
+	position: absolute;
+	display: block;
+	width: 677px;
+	text-align: center;
+	text-shadow: 0px 1px 0px #fff;
+	top: 74px;
+	left: 105px;
+	color: #256988;
+	font: 53px "Trebuchet MS", sans-serif;
+}
+.register-bg{
+	position: absolute;
+	top: 221px;
+	left: 292px;
+	width: 307px;
+	height: 78px;
+	background: url(images/register-bg.png) no-repeat bottom;
+}
+#register{
+	display: block;
+	margin: 221px 0 0 242px;
+	padding: 20px 50px 29px 55px;
+	background: url(images/register-bg.png) no-repeat;
+	color: #fff;
+	font: 27px "Trebuchet MS", sans-serif;
+	text-decoration: none;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------NAV------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+#nav{	
+	float: right;
+	margin: 50px 0 0 0;
+	
+}
+#nav li{
+	margin: 0 0 0 26px;
+	float: left;
+}
+#nav li:first-child{
+	margin: 0;
+}
+#nav li a{
+	color: #396375;
+	font-family: 'PT Sans',Arial, sans-serif;
+	font-weight: 700; 
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 0px;
+}
+#nav .active a{
+	color: #e21d5d;
+}
+#nav li a:hover{
+	color: #e21d5d; 
+	text-decoration: none;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------CONTENT--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.home #content h2{
+	padding-bottom: 8px;
+	text-transform: uppercase;
+	font: 20px "Trebuchet MS", sans-serif;
+	text-align: center;
+	letter-spacing: 5px;
+	border-bottom: 1px solid #A7C3CF;
+}
+.home #courses{
+	margin-top: 25px;
+}
+.home #courses li{
+	float: left;
+	height: 197px;
+	width: 430px;
+}
+.home #courses li:nth-child(2n){
+	padding-left: 40px;
+}
+.home #courses li p{
+	padding: 0 15px 0 0;
+}
+.home #courses li img{
+	float: left;
+	margin: 0 23px 40px 0;
+}
+.home #courses li a{
+	font-size: 25px;
+	color: #ea2778;
+}
+.home #courses li a:hover{
+	text-decoration: none;
+}
+.home #contacts-wrap {
+width: 900px;
+height: 200px;
+display: inline-block;
+padding-bottom: 55px;
+}
+.home #contacts > li.like-box{
+	width: 300px;
+	padding-top: 8px;
+}
+.home #contacts > li.like-box > h2{
+	display: none;
+}
+.home #contacts > li{
+	float: left;
+}
+.home #contacts .fb-img{
+	margin-top: 19px;
+}
+.home #contacts li h3{
+	padding: 10px 0 8px 0;
+	text-transform: uppercase;
+	font: 17px "Trebuchet MS", sans-serif;
+	text-align: center;
+	letter-spacing: 5px;
+	border-bottom: 1px solid #A7C3CF;
+}
+.home #contacts .sponsors img{
+	float: left;
+}
+.home .about-geekhub{
+	margin: 40px 0 32px 132px;
+	width: 670px;
+	font-size: 15px;
+}
+.home .bold{
+	font-weight: bold;
+}
+.home .container{
+	width: 300px;
+	padding-bottom: 55px;
+}
+.home #sponsors li{
+	text-align: center;
+	display: inline;
+}
+.home #sponsors li a{
+	text-align: center;
+	margin: 24px 12px 0 12px;
+}
+.home .sponsor-1, .home .sponsor-2, .home .sponsor-3, .home .sponsor-4, .home .sponsor-5{
+	display: inline-block;
+	width: 72px;
+	height: 54px;
+}
+.home .sponsor-1{
+	background: url(images/gospel-house-logo.png) no-repeat;
+}
+.home .sponsor-2{
+	background: url(images/master-of-code-logo.png) no-repeat;
+}
+.home .sponsor-3{
+	background: url(images/sponsor-3-logo.png) no-repeat;
+}
+.home .sponsor-4{
+	background: url(images/sponsor-4-logo.png) no-repeat;
+}
+.home .sponsor-5{
+	background: url(images/sponsor-5-logo.png) no-repeat;
+}
+.home .sponsor-1:hover{
+	background: url(images/gospel-house-logo-hover.png) no-repeat;
+}
+.home .sponsor-2:hover{
+	background: url(images/master-of-code-logo-hover.png) no-repeat;
+}
+.home .sponsor-3:hover{
+	background: url(images/sponsor-3-logo-hover.png) no-repeat;
+}
+.home .sponsor-4:hover{
+	background: url(images/sponsor-4-logo-hover.png) no-repeat;
+}
+.home .sponsor-5:hover{
+	background: url(images/sponsor-5-logo-hover.png) no-repeat;
+}
+.home .margin-l{
+	margin-left: 50px;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------FOOTER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+#footer{
+	height: 50px;
+	border-top: 1px solid #a7c3cf;
+	clear: both;
+}
+#footer ul{
+	margin: 15px 0 0 0;
+	float: left;
+}
+#footer ul li{
+	float: left;
+	margin: 0 21px 0 0;
+}
+#footer ul li a{
+	font: 12px Arial, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #396375;
+}
+#footer .active a {
+	color: #f95c4e;
+}
+#footer span{
+	margin: 15px 0 0 0;
+	font: 12px Arial, sans-serif;
+	float: right;
+	color: #a7c3cf;
+}
+#footer ul li a:hover{
+	color: #f85b4e; 
+	text-decoration: none;
+}
+/*******************************************************************************************/
+/****************************************TEACHERS PAGE**************************************/
+/*******************************************************************************************/
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------CONTENT--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.page-template-teachers-php #content{
+	clear: both;
+}
+.page-template-teachers-php h2.slogan{
+	border-bottom: 1px solid #a7c3cf;
+	font-size: 56px;
+	font-weight: normal;
+	color: #487589;
+	padding: 18px 0 10px 0;
+}
+.page-template-teachers-php #content ul{
+	margin-top: 28px;
+}
+.page-template-teachers-php #content ul li{
+	overflow: hidden;
+	height: 169px;
+	margin-bottom: 15px;
+}
+.page-template-teachers-php #content ul li img{
+	margin: 0 23px 0 21px;
+	float: left;
+}
+.page-template-teachers-php #content ul li h3{
+	margin: 49px 0 0 0;
+	width: 204px;
+	float: left;
+	text-align: right;
+	font-family: 'PT Sans',Arial, sans-serif;
+	font-weight: 400;
+	font-size: 28px;
+	line-height: 28px;
+	color: #e92777;
+}
+.page-template-teachers-php #content ul li h3 span{
+	color: #f27539;
+	font-size: 12.5px;
+}
+.page-template-teachers-php #content ul li span{
+	display: block;
+}
+.page-template-teachers-php #content ul li p{
+	width: 442px;
+	margin: 40px 0 0 0;
+	overflow: hidden;
+	text-align: left;
+	color: #487589;
+	line-height: 20px;
+}
+.page-template-teachers-php #content ul li:nth-child(2n){
+	margin-bottom: 23px;
+}
+.page-template-teachers-php #content ul li:nth-child(2n) img{
+	margin: 0 24px 0 20px;
+	float: right;
+}
+.page-template-teachers-php #content ul li:nth-child(2n) h3{
+	float: right;
+	text-align: left;
+}
+.page-template-teachers-php #content ul li:nth-child(2n) p{
+	overflow: hidden;
+	text-align: right;
+}
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------FOOTER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.page-template-teachers-php #footer{
+	height: 50px;
+	border-top: 1px solid #a7c3cf;
+	clear: both;
+}
+.page-template-teachers-php #footer ul{
+	margin: 15px 0 0 0;
+	float: left;
+}
+.page-template-teachers-php #footer ul li{
+	float: left;
+	margin: 0 21px 0 0;
+}
+.page-template-teachers-php #footer ul li a{
+	font: 11px Arial, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #396375;
+}
+.page-template-teachers-php #footer .active a {
+	color: #f85b4e;
+}
+.page-template-teachers-php #footer span{
+	margin: 15px 0 0 0;
+	font: 11px Arial, sans-serif;
+	float: right;
+	color: #a7c3cf;
+}
+.page-template-teachers-php #footer ul li a:hover{
+	color: #f85b4e; 
+	text-decoration: none;
+}
